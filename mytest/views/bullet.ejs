@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<meta charset="utf-8">
+
+    <title>test board</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+   <table border="1px">
+    <tr>
+      <th width="30px">id</th>
+      <th width="100px">title</th>
+    </tr>
+    <% for(var i=0; i<rows.length; i++) {%>
+    <tr>
+     <td><%= rows[i].id %></td>
+     <td><%= rows[i].title %></td>
+    </tr>
+    <% } %>
+  </table>
+  </body>
+</html> 
