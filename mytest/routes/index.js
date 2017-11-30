@@ -17,5 +17,10 @@ router.get('/reservation', function(req, res, next) {
 router.get('/bullet', function(req, res, next) {
   res.render('bullet', { title: 'bullet.ejs' });
 });
-
+router.get('/register', function(req, res, next) {
+  res.render('register', { title: 'register.ejs' });
+});
+router.get('/evaluate', function(req, res, next) {
+  res.render('evaluate', { title: 'evaluate.ejs' });
+});
 module.exports = router;
