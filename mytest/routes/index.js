@@ -44,6 +44,15 @@ router.get('/evaluate', function(req, res, next) {
 router.get('/newwrite', function(req, res, next) {
   res.render('newwrite', { title: 'newwrite.ejs' });
 });
+router.post('/bullet', function(req, res){
+    // 글 작성하고 submit하게 되면 저장이 되는 부분
+    var addNewTitle = req.body.addContentSubject;
+    var addNewWriter = req.body.addContentWriter;
+    var addNewContent = req.body.addContents;
+    var addNewPasword = req.body.addContentPassword;
+    addBoard(addNewTitle, addNewWriter, addNewContent, addNewPasword);
+    res.redirect('/boards');
+});
 //회원가입
 router.post('/postjoin', function(req, res,next){
 

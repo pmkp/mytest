@@ -48,15 +48,15 @@
         </nav>
     </div>
 </div>
-      <a href="newwrite" onclick="displayWriteForm();"><div class="write_btn">새 글</div></a>
+      <a href="/newwrite" onclick="displayWriteForm();"><div class="write_btn">글쓰기</div></a>
    
+   <table border="1px" class="table">
    <table border="1px" class="table">
        <tr>
       <th width="10%">번호</th>
       <th width="20%">제목</th>
-           <th width="20%">아이디</th>
+    <th width="20%">아이디</th>
         <th width="10%">날짜</th>
-        <th width="10%">조회수</th>
     </tr>
 <!--<%if(contents.length>0){%>
         <%var i = 0;%>
@@ -67,7 +67,6 @@
             <td class="title"><a href="/boards/view?id=<%=item._id%>"><%=item.title%></a></td>
             <td class="writer"><%=item.writer%></td>
             <td class="date"><%=dateFormatChange(item.date)%></td>
-            <td class="cnt"><%=item.count%></td>
         </tr>
         <%})%>
         <%} else {%>
