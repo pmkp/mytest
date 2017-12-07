@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html>
-  <head>    
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-    <link rel='stylesheet' href='/stylesheets/index.css' />
+      <link rel='stylesheet' href='/stylesheets/index.css' />
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <title>평가</title>
+    <title>게시판</title>
   </head>
   <body>
-    <div class="navbar-wrapper">
+      <div class="navbar-wrapper">
     <div class="container-fluid">
         <nav class="navbar navbar-fixed-top">
             <div class="container">
@@ -25,9 +25,12 @@
                 <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
                         <li><a href="/reservation" class="">예약</a></li>
-                        <li class="active"><a href="/evaluate" >평가 </a></li>
+                        <li>
+                            <a href="/evaluate" >평가 </a>
+                            
+                        </li>
                         <li><a href="/register">등록</a></li>
-                        <li ><a href="/bullet" >게시판 </a>
+                        <li class="active"><a href="/bullet" >게시판 </a>
                         </li>
                         <li><a href="/login" >로그인 </a>                            
                         </li>
@@ -45,22 +48,18 @@
         </nav>
     </div>
 </div>
-    <div class="write_form">
-      <form class="form-review" method="get" action="/review">
-      <button type="submit" class="btn btn-default">찜</button>
-      <button type="submit" class="btn btn-default">리뷰하기</button>
-      </form>
-        </div>
       <div class="write_form">
         <form id="writeAction" action="/bullet" method="post">
-            주소
+            <input type="text" class="inputSubject" id="addContentSubject" name="addContentSubject" placeholder="제목">
             <br>
-            tel
+            <input type="text" class="inputWriter" id="addContentWriter" name="addContentWriter" placeholder="작성자">
             <br>
-            영업시간
-            <br>
+            <textarea class="textContents" id="addContents" name="addContents" rows="20" cols="80"></textarea>
         </form>
+        <div id = "new" class="addBtngroup">
+            <a onclick="submitContents('add');"><div>SUBMIT</div></a>
+            <a onclick="cancelWriteForm('cancel');"><div>CANCEL</div></a>
+        </div>
       </div>
   </body>
-</html>
- 
+</html>  

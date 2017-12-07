@@ -180,8 +180,9 @@ label{
     width:80%;
 }
 table{
-    margin-top:90px;
-    margin-left : 60px;    
+    margin-top:20px;
+    margin-left :20px;
+    margin-right:20px;
 }
 
 .form-login {
@@ -195,4 +196,13 @@ table{
 }
 .wrapper{
     text-align:center;
+}
+.write_btn{
+    margin-top:90px;
+}
+.write_form{
+    margin-top:90px;
+}
+.div_form{
+    margin-top:90px;
 }
