@@ -25,12 +25,12 @@
                 <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
                         <li><a href="/reservation" class="">예약</a></li>
-                        <li>
+                        <!--<li>
                             <a href="/evaluate" >평가 </a>
                             
-                        </li>
+                        </li>-->
                         <li><a href="/register">등록</a></li>
-                        <li class="active"><a href="/bullet" >게시판 </a>
+                        <li class="active"><a href="/bullet" >맛집 후기</a>
                         </li>
                         <li><a href="/login" >로그인 </a>                            
                         </li>
@@ -54,11 +54,11 @@
             <br>
             <input type="text" class="inputWriter" id="addContentWriter" name="addContentWriter" placeholder="작성자">
             <br>
-            <textarea class="textContents" id="addContents" name="addContents" rows="20" cols="80"></textarea>
+            <textarea class="textContents" id="addContents" name="addContents" rows="20" cols="80" placeholder="내용"></textarea>
         </form>
         <div id = "new" class="addBtngroup">
-            <a onclick="submitContents('add');"><div>SUBMIT</div></a>
-            <a onclick="cancelWriteForm('cancel');"><div>CANCEL</div></a>
+            <a onclick="submitContents('add');"><div>등록</div></a>
+            <a onclick="cancelWriteForm('cancel');"><div>취소</div></a>
         </div>
       </div>
   </body>
