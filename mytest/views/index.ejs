@@ -29,28 +29,28 @@
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <li><a href="/reservation" class="">예약</a></li>
+                        <li><a href="/reservation" class=""><b>예약</b></a></li>
                         <!--<li>
                             <a href="/evaluate" >평가 </a>
                             
                         </li>-->
-                        <li><a href="/register">등록</a></li>
-                        <li ><a href="/bullet" >맛집 후기 </a>
+                        <li><a href="/register"><b>등록</b></a></li>
+                        <li ><a href="/bullet" ><b>맛집 후기 </b></a>
                         </li>
-                        <li><a href="/login" >로그인 </a>                            
+                        <li><a href="/login" ><b>로그인 </b></a>                            
                         </li>
-                         <li><a href="/join" >회원가입 </a>                            
+                         <li><a href="/join" ><b>회원가입</b> </a>                            
                         </li>
                     </ul>
                     <form class="navbar-form navbar-left" method="post" action="/find" role="search">
             <div class="form-group">
-              <input type="text" name = "name" class="form-control" placeholder="Search">
+              <b><input type="text" name = "name" class="form-control" placeholder="search"></b>
             </div>
-            <button type="submit" class="btn btn-default">검색</button>        
+            <button type="submit" class="btn btn-default"><b>검색</b></button>        
           </form>
-            <div>
-            <form class="form-horizontal" method="get" action="/logout">
-                        <button type="submit" class="btn btn-default"><%= login %></button>
+            <div class="form group">
+            <form class="navbar-form navbar-left" method="get" action="/logout">
+                        <button type="submit" class="btn btn-default"><b><%= login %></b></button>
                     </form>
                         </div>
                 </div>
@@ -68,7 +68,7 @@
       <div class="row">
         <div >
           <div >
-            <a href="#"><img class="card-img-top" width="600" height="400" src="http://13.114.103.74/<%=item.picture%>" alt=""></a>
+            <a href="#"><img class="card-img-top" width="600" height="400" src="http://13.125.13.174:3000/<%=item.picture%>" alt=""></a>
             <div class="card-body">
               <h4 class="card-title">
                 <a href="#"><%=item.name%></a>

@@ -33,28 +33,28 @@
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <li><a href="/reservation" class="">예약</a></li>
+                        <li><a href="/reservation" class=""><b>예약</b></a></li>
                         <!--<li>
                             <a href="/evaluate" >평가 </a>
                             
                         </li>-->
-                        <li><a href="/register">등록</a></li>
-                        <li ><a href="/bullet" >맛집 후기 </a>
+                        <li><a href="/register"><b>등록</b></a></li>
+                        <li ><a href="/bullet" ><b>맛집 후기</b> </a>
                         </li>
-                        <li><a href="/login" >로그인 </a>                            
+                        <li><a href="/login" ><b>로그인</b> </a>                            
                         </li>
-                         <li><a href="/join" >회원가입 </a>                            
+                         <li><a href="/join" ><b>회원가입</b> </a>                            
                         </li>
                     </ul>
                     <form class="navbar-form navbar-left" method="post" action="/find" role="search">
             <div class="form-group">
-              <input type="text" name = "name" class="form-control" placeholder="Search">
+              <b><input type="text" name = "name" class="form-control" placeholder="search"></b>
             </div>
-            <button type="submit" class="btn btn-default">검색</button>        
+            <button type="submit" class="btn btn-default"><b>검색</b></button>        
           </form>
             <div>
-            <form class="form-horizontal" method="get" action="/logout">
-                        <button type="submit" class="btn btn-default"><%= login %></button>
+            <form class="navbar-form navbar-left" method="get" action="/logout">
+                        <button type="submit" class="btn btn-default"><b><%= login %></b></button>
                     </form>
                         </div>
                 </div>
@@ -73,7 +73,7 @@
 							<div class="cols-sm-10">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
-									<input type="text" class="form-control" name="name" id="name"  placeholder="Enter your Name"/>
+									<b><input type="text" class="form-control" name="name" id="name"  placeholder="name"/></b>
 								</div>
 							</div>
 						</div>
@@ -83,7 +83,7 @@
 							<div class="cols-sm-10">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
-									<input type="text" class="form-control" name="email" id="email"  placeholder="Enter your Email"/>
+									<b><input type="text" class="form-control" name="email" id="email"  placeholder="email"/></b>
 								</div>
 							</div>
 						</div>
@@ -93,7 +93,7 @@
 							<div class="cols-sm-10">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="fa fa-users fa" aria-hidden="true"></i></span>
-									<input type="text" class="form-control" name="user_id" id="user_id"  placeholder="Enter your Username"/>
+									<b><input type="text" class="form-control" name="user_id" id="user_id"  placeholder="username"/></b>
 								</div>
 							</div>
 						</div>
@@ -103,7 +103,7 @@
 							<div class="cols-sm-10">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
-									<input type="password" class="form-control" name="password" id="password"  placeholder="Enter your Password"/>
+									<b><input type="password" class="form-control" name="password" id="password"  placeholder="password"/></b>
 								</div>
 							</div>
 						</div>
@@ -113,16 +113,16 @@
 							<div class="cols-sm-10">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
-									<input type="password" class="form-control" name="confirm" id="confirm"  placeholder="Confirm your Password"/>
+									<b><input type="password" class="form-control" name="confirm" id="confirm"  placeholder="confirm password"/></b>
 								</div>
 							</div>
 						</div>
 
-						<div class="form-group ">
-							<button type="submit" class="btn btn-primary btn-lg btn-block login-button">등록</button>
+						<div class="form-group">
+							<button type="submit" class="btn btn-primary btn-lg btn-block login-button"><b>등록</b></button>
 						</div>
 						<div class="login-register">
-				            <a href="/login">Login</a>
+				            <a href="/login"><b>Login</b></a>
 				         </div>
 					</form>
                     

@@ -4,7 +4,7 @@ body{
 .navbar{
 background:rgba(255,255,255,0.25);
 border: none;
-
+font-family:monospace;
 }
 
 .nav>li>a{
@@ -44,6 +44,7 @@ h1.title {
 
 .form-group{
 	margin-bottom: 15px;
+    font-family:monospace;
 }
 
 label{
@@ -77,6 +78,7 @@ label{
 .login-register{
 	font-size: 11px;
 	text-align: center;
+    font-family:monospace;
 } 
 
 #output {
@@ -138,8 +140,8 @@ label{
 }
 .hotel_reserve_box {
     margin-top: 70px;
-    margin-left: 350px;
-    margin-right: 350px;
+    margin-left: 800px;
+    margin-right: 800px;
     margin-bottom: 60px;
     padding: 40px 50px;
     background-color: #8999A8;
@@ -183,6 +185,7 @@ table{
     margin-top:20px;
     margin-left :20px;
     margin-right:20px;
+    font-family:monospace;
 }
 
 .form-login {
@@ -199,10 +202,44 @@ table{
 }
 .write_btn{
     margin-top:90px;
+    font-family:monospace;
 }
 .write_form{
     margin-top:90px;
 }
 .div_form{
     margin-top:90px;
+}
+.container-fluid{
+    font-family:monospace;
+}
+.form-control{
+    font-family:monospace;
+}
+.form-horizontal{
+    font-family:monospace;
+}
+.addBtngroup{
+    font-family:monospace;
+}
+.inputSubject{
+    font-family:monospace;
+}
+.inputWriter{
+    font-family:monospace;
+}
+.textContents{
+    font-family:monospace;
+}
+.table-striped{
+     font-family:monospace;
+}
+.h3{
+     font-family:monospace;
+}
+#sample4_jibunAddress{
+    font-family:monospace;
+}
+#sample4_roadAddress{
+    font-family:monospace;
 }

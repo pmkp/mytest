@@ -74,28 +74,28 @@ document.getElementById('guide').innerHTML = '';
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <li><a href="/reservation" class="">예약</a></li>
+                        <li><a href="/reservation" class=""><b>예약</b></a></li>
                         <!--<li>
                             <a href="/evaluate" >평가 </a>
                             
                         </li>-->
-                        <li><a href="/register">등록</a></li>
-                        <li ><a href="/bullet" >맛집 후기 </a>
+                        <li><a href="/register"><b>등록</b></a></li>
+                        <li ><a href="/bullet" ><b>맛집 후기 </b></a>
                         </li>
-                        <li><a href="/login" >로그인 </a>                            
+                        <li><a href="/login" ><b>로그인</b> </a>                            
                         </li>
-                         <li><a href="/join" >회원가입 </a>                            
+                         <li><a href="/join" ><b>회원가입 </b></a>                            
                         </li>
                     </ul>
                     <form class="navbar-form navbar-left" method="post" action="/find" role="search">
             <div class="form-group">
-              <input type="text" name = "name" class="form-control" placeholder="Search">
+              <b><input type="text" name = "name" class="form-control" placeholder="search"></b>
             </div>
-            <button type="submit" class="btn btn-default">검색</button>        
+            <button type="submit" class="btn btn-default"><b>검색</b></button>        
           </form>
             <div>
-            <form class="form-horizontal" method="get" action="/logout">
-                        <button type="submit" class="btn btn-default"><%= login %></button>
+            <form class="navbar-form navbar-left" method="get" action="/logout">
+                        <button type="submit" class="btn btn-default"><b><%= login %></b></button>
                     </form>
                         </div>
                 </div>
@@ -105,49 +105,53 @@ document.getElementById('guide').innerHTML = '';
     </div>
 </div>   
       <br><br>
+      <div align ="center">
       <h3>맛집등록 </h3>               
       <form action="/insert-restaurant" method="post" enctype="multipart/form-data" >
-        <table border="1" width="400" height="400">
+        <table border="1" width="380" height="300" class="table-striped" >
           <tr>
-              <td align="center" bgcolor="#FFFFCC">이름 </td>                             
-              <td><input type="text" name="name"/></td>
+              <td align="center" bgcolor="#FFFFCC"><b>이름</b> </td>                             
+              <td bdcolor="#FFFFFF"><input type="text" name="name"/></td>
           </tr>                              
           <tr>
-              <td align="center" bgcolor="#FFFFCC">전화번호 </td>                         
-              <td><select name="tel1"><option value="02">02</option> 
-              <option value="070">070</option> 
-              <option value="010">010</option>                                           
-              <option value="011">011</option>                                           
-              <option value="016">016</option>                                           
-              <option value="017">017</option>                                           
-              <option value="019">019</option></select>                                 
+              <td align="center" bgcolor="#FFFFCC"><b>전화번호</b> </td>                         
+              <td bgcolor="#FFFFFF"><select name="tel1"><option value="02"><b>02</b></option>
+                  <option value="031"><b>031</b></option>
+              <option value="070"><b>070</b></option> 
+              <option value="010"><b>010</b></option>                                  
+              <option value="011"><b>011</b></option>         
+              <option value="016"><b>016</b></option>         
+              <option value="017"><b>017</b></option>                                           
+              <option value="019"><b>019</b></option></select>                                 
               -<input type="text" name="tel2" maxlength="4" size="4"/>                   
               -<input type="text" name="tel3" maxlength="4" size="4"/></td>
           </tr>                    
           <tr>
-              <td align="center" bgcolor="#FFFFCC">주소</td>                             <td><input id="sample4_postcode" type="text" placeholder="우편번호"/>
-              <input type="button" onclick="sample4_execDaumPostcode()" value="우편번호 찾기"/>
+              <td align="center" bgcolor="#FFFFCC"><b>주소</b></td>                             <td><b><input id="sample4_postcode" type="text" placeholder="우편번호"/></b>
+              <b><input type="button" onclick="sample4_execDaumPostcode()" value="우편번호 찾기"/></b>
               <br>
-              <input id="sample4_roadAddress" type="text" name="adress" placeholder="도로명주소"/>
-              <input id="sample4_jibunAddress" name="adress2"  type="text" placeholder="지번주소"/>
+              <b><input id="sample4_roadAddress" type="text" name="adress" placeholder="도로명주소"/></b>
+              <b><input id="sample4_jibunAddress" name="adress2"  type="text" placeholder="지번주소"/></b>
               <span id="guide" style="color:#999;"></span>
               </td>
             </tr>
             <tr>
-                <td align="center" bgcolor="#FFFFCC">영업시간 </td>                       
-                <td><input type="text" name="businesshours"/></td>
+                <td align="center" bgcolor="#FFFFCC"><b>영업시간</b> </td>                       
+                <td bgcolor="#FFFFFF"><input type="text" name="businesshours"/></td>
             </tr>                              
             <tr>
-                <td align="center" bgcolor="#FFFFCC">메뉴</td>
+                <td align="center" bgcolor="#FFFFCC"><b>음식종류</b></td>
                 <td><textarea placeholder="" name="menu"></textarea></td>
             </tr>                              
             <tr>
-                <td align="center" bgcolor="#FFFFCC">사진 등록</td>                       
-                <td><input class="inputFile" id="UploadFile" type="file" name="picture" multiple=""/></td>
+                <td align="center" bgcolor="#FFFFCC"><b>사진 등록</b></td>                       
+                <td bgcolor="#FFFFFF"><input class="inputFile" id="UploadFile" type="file" name="picture" multiple=""/></td>
             </tr>
-          </table>      
+          </table>
+          
  <br>                       
-          <input type="submit" value="등록"/></form>
+          <b><input type="submit" value="등록"/></b></form>
+          </div>
   </body>
 </html>
  
